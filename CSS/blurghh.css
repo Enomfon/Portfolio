@@ -137,7 +137,7 @@ nav .icon-burger .line{
 section{
     padding:100px 0;
 }
-.about, .Services, .Skills{
+.about, .Services, .Skills, .team{
     font-family:'Roboto', Verdana;
 }
 .about .about-content, 
@@ -223,14 +223,16 @@ section .title::after{
     background: none;
 }
 /* Services Section Styling */
-.Services{
+.Services, .team{
     color:#fff;
     background:#000A80;
 }
-.Services .title::before{
+.Services .title::before,
+.team .title::before{
     background:#fff;
 }
-.Services .title::after{
+.Services .title::after,
+.team .title::after{
     content:"What I Offer";
     /* color:#0015FF; */
     background:#000a80;
@@ -281,6 +283,27 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
+.Skills .Skills-content .left p{
+    text-align: justify;
+}
+.Skills .Skills-content .left a{
+    display: inline-block; 
+    background: #0015FF;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top:20px;
+    text-decoration: none;
+    border-radius: 6px;
+    border:2px solid #0015FF;
+    transition: all 0.3s ease;
+}
+.Skills .Skills-content .left a:hover{
+    color: #0015FF;
+    background: none; 
+}
+
 .Skills .Skills-content .right .bar{
     margin-bottom: 15px;
 }
@@ -331,6 +354,24 @@ section .title::after{
     width:75%;
 }
 
+
+.team .title::after{
+    content:"meet the crew"
+}
+.team .carousel .card{
+    background: #000fbf;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+.team .carousel .card img{
+    height:150px;
+    width:150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid #000A80
+
+
+}
 
 
 
@@ -459,6 +500,10 @@ section .title::after{
         margin-bottom: 20px;
 
     }
+    .Skills .Skills-content .column{
+        width:100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 690px){
@@ -481,6 +526,10 @@ section .title::after{
         width:100%;
         
     } 
+    
+
+
+
 }
 @media (max-width: 500px){
     .max-width{
