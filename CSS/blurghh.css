@@ -372,6 +372,9 @@ section .title::after{
 
 
 }
+.team .carousel {
+    display:flex;
+}
 
 
 
